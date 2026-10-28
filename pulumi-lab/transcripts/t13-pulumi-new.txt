@@ -1,0 +1,34 @@
+$ pulumi new python --name shopping-list --description "A generated scaffold" --stack dev --yes --generate-only
+Created project 'shopping-list'
+
+Your new project is ready to go! 
+
+To perform an initial deployment, run the following commands:
+
+   1. pulumi install
+   2. pulumi stack init
+
+Then, run `pulumi up`
+
+$ ls
+Pulumi.yaml
+__main__.py
+requirements.txt
+$ cat Pulumi.yaml
+name: shopping-list
+description: A generated scaffold
+runtime:
+  name: python
+  options:
+    toolchain: pip
+    virtualenv: venv
+config:
+  pulumi:tags:
+    value:
+      pulumi:template: python
+$ cat __main__.py
+"""A Python Pulumi program"""
+
+import pulumi
+$ cat requirements.txt
+pulumi>=3.0.0,<4.0.0

@@ -1,0 +1,49 @@
+Previewing update (dev):
+
+@ previewing update......
+ +  pulumi:pulumi:Stack notice-board-dev create 
+@ previewing update....
+ +  random:index:RandomPet board-name create 
+ +  command:local:Command card-3 create 
+ +  command:local:Command card-1 create 
+ +  random:index:RandomPassword lockbox-pin create 
+ +  command:local:Command card-2 create 
+ +  pulumi:pulumi:Stack notice-board-dev create 
+Outputs:
+    board_name : [unknown]
+    board_title: "Village Hall Notice Board"
+    lockbox_pin: [secret]
+    signing_key: [secret]
+
+Resources:
+    + 6 to create
+
+Updating (dev):
+@ updating....
+
+@ updating.....
+ +  pulumi:pulumi:Stack notice-board-dev creating (0s) 
+@ updating....
+ +  random:index:RandomPet board-name creating (0s) 
+ +  random:index:RandomPassword lockbox-pin creating (0s) 
+ +  command:local:Command card-1 creating (0s) 
+ +  command:local:Command card-3 creating (0s) 
+ +  command:local:Command card-2 creating (0s) 
+ +  random:index:RandomPet board-name created (0.04s) 
+ +  command:local:Command card-3 created (0.05s) 
+ +  command:local:Command card-1 created (0.05s) 
+ +  command:local:Command card-2 created (0.03s) 
+ +  random:index:RandomPassword lockbox-pin created (0.22s) 
+@ updating....
+ +  pulumi:pulumi:Stack notice-board-dev created (0.86s) 
+Outputs:
+    board_name : "finer-earwig"
+    board_title: "Village Hall Notice Board"
+    lockbox_pin: [secret]
+    signing_key: [secret]
+
+Resources:
+    + 6 created
+
+Duration: 4s
+

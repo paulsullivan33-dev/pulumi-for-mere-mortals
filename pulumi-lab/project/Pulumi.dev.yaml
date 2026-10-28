@@ -1,0 +1,6 @@
+encryptionsalt: v1:fDGzf/C4Oeg=:v1:w0m1LJ8TLbisZoGq:zS85Kbce3NojeBgqGwah/GBuSgX/Iw==
+config:
+  notice-board:boardTitle: Village Hall Notice Board
+  notice-board:signingKey:
+    secure: v1:efLT3dum3l5QZPY+:dAfLFSrpeXdouMn6bLvk2n3fDQ5tSJAtAhIi
+  notice-board:pinCount: "5"

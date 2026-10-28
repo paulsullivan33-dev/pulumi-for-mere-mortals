@@ -1,0 +1,5 @@
+$ pulumi stack init dev
+Created stack 'dev'
+$ pulumi stack ls
+NAME  LAST UPDATE  RESOURCE COUNT
+dev*  now          0

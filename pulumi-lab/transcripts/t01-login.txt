@@ -1,0 +1,4 @@
+$ pulumi login --local
+Logged in to htch-runtime as root (file://~)
+$ pulumi whoami
+root

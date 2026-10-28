@@ -1,0 +1,74 @@
+$ pulumi up --yes
+Previewing update (dev):
+
+@ previewing update.....
+ ~  command:local:Command card-1 update [diff: ~create]
+ +  command:local:Command card-5 create 
+ ~  command:local:Command card-2 update [diff: ~create]
+ ~  command:local:Command card-3 update [diff: ~create]
+ +  command:local:Command card-4 create 
+@ previewing update....
+    pulumi:pulumi:Stack notice-board-dev  
+Resources:
+    + 2 to create
+    ~ 3 to update
+    5 changes. 3 unchanged
+
+Updating (dev):
+
+@ updating.....
+ ~  command:local:Command card-1 updating (0s) [diff: ~create]
+ +  command:local:Command card-5 creating (0s) 
+ ~  command:local:Command card-2 updating (0s) [diff: ~create]
+ +  command:local:Command card-5 created (0.02s) 
+ ~  command:local:Command card-2 updated (0.02s) [diff: ~create]
+ ~  command:local:Command card-3 updating (0s) [diff: ~create]
+ +  command:local:Command card-4 creating (0s) 
+ ~  command:local:Command card-1 updated (0.03s) [diff: ~create]
+ +  command:local:Command card-4 created (0.02s) 
+ ~  command:local:Command card-3 updated (0.02s) [diff: ~create]
+    pulumi:pulumi:Stack notice-board-dev  
+Outputs:
+    board_name : "finer-earwig"
+    board_title: "Village Hall Notice Board"
+    lockbox_pin: [secret]
+    signing_key: [secret]
+
+Resources:
+    + 2 created
+    ~ 3 updated
+    5 changes. 3 unchanged
+
+Duration: 3s
+
+$ ls notice-*.txt
+notice-1.txt
+notice-2.txt
+notice-3.txt
+notice-4.txt
+notice-5.txt
+$ cat notice-5.txt
+Notice 5 of 5: bring a mug, borrow a book. Board: Village Hall Notice Board
+$ pulumi up --yes   # a second time, with nothing changed
+Previewing update (dev):
+
+@ previewing update.....
+    pulumi:pulumi:Stack notice-board-dev  
+Resources:
+    8 unchanged
+
+Updating (dev):
+
+@ updating......
+    pulumi:pulumi:Stack notice-board-dev  
+Outputs:
+    board_name : "finer-earwig"
+    board_title: "Village Hall Notice Board"
+    lockbox_pin: [secret]
+    signing_key: [secret]
+
+Resources:
+    8 unchanged
+
+Duration: 3s
+

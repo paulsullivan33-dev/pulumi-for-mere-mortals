@@ -1,0 +1,17 @@
+$ pulumi config set pinCount 5
+$ pulumi preview
+Previewing update (dev):
+
+@ previewing update......
+ +  command:local:Command card-5 create 
+ ~  command:local:Command card-1 update [diff: ~create]
+ ~  command:local:Command card-3 update [diff: ~create]
+ ~  command:local:Command card-2 update [diff: ~create]
+ +  command:local:Command card-4 create 
+@ previewing update....
+    pulumi:pulumi:Stack notice-board-dev  
+Resources:
+    + 2 to create
+    ~ 3 to update
+    5 changes. 3 unchanged
+

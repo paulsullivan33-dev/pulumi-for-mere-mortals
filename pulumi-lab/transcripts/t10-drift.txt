@@ -1,0 +1,64 @@
+$ cat notice-3.txt
+Notice 3 of 5: bring a mug, borrow a book. Board: Village Hall Notice Board
+$ echo "Extra line added by hand." >> notice-3.txt
+$ pulumi refresh --yes
+Previewing refresh (dev):
+
+ ~  pulumi:pulumi:Stack notice-board-dev refreshing 
+    pulumi:pulumi:Stack notice-board-dev running 
+ ~  command:local:Command card-4 refreshing 
+ ~  random:index:RandomPet board-name refreshing 
+ ~  command:local:Command card-1 refreshing 
+ ~  command:local:Command card-3 refreshing 
+ ~  command:local:Command card-2 refreshing 
+ ~  command:local:Command card-5 refreshing 
+    command:local:Command card-3  
+    command:local:Command card-4  
+    command:local:Command card-5  
+    command:local:Command card-2  
+ ~  random:index:RandomPassword lockbox-pin refreshing 
+    command:local:Command card-1  
+    random:index:RandomPet board-name  
+    random:index:RandomPassword lockbox-pin  
+    pulumi:pulumi:Stack notice-board-dev  
+Resources:
+    8 unchanged
+
+Refreshing (dev):
+
+ ~  pulumi:pulumi:Stack notice-board-dev refreshing (0s) 
+    pulumi:pulumi:Stack notice-board-dev running 
+ ~  command:local:Command card-5 refreshing (0s) 
+ ~  random:index:RandomPassword lockbox-pin refreshing (0s) 
+ ~  command:local:Command card-2 refreshing (0s) 
+ ~  random:index:RandomPet board-name refreshing (0s) 
+ ~  command:local:Command card-3 refreshing (0s) 
+ ~  command:local:Command card-1 refreshing (0s) 
+ ~  command:local:Command card-4 refreshing (0s) 
+    command:local:Command card-3  
+    command:local:Command card-4  
+    command:local:Command card-2  
+    command:local:Command card-1  
+    random:index:RandomPassword lockbox-pin  
+    command:local:Command card-5  
+    random:index:RandomPet board-name  
+    pulumi:pulumi:Stack notice-board-dev  
+Outputs:
+    board_name : "finer-earwig"
+    board_title: "Village Hall Notice Board"
+    lockbox_pin: [secret]
+    signing_key: [secret]
+
+Resources:
+    8 unchanged
+
+Duration: 1s
+
+$ pulumi preview
+Previewing update (dev):
+
+@ previewing update......
+    pulumi:pulumi:Stack notice-board-dev  
+Resources:
+    8 unchanged
+

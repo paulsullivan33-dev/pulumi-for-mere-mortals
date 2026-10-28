@@ -1,0 +1,25 @@
+$ pulumi stack init defaults
+Created stack 'defaults'
+$ pulumi preview
+Previewing update (defaults):
+
+@ previewing update....
+ +  pulumi:pulumi:Stack notice-board-defaults create 
+@ previewing update....
+ +  random:index:RandomPassword lockbox-pin create 
+ +  random:index:RandomPet board-name create 
+ +  command:local:Command card-3 create 
+ +  command:local:Command card-1 create 
+ +  command:local:Command card-2 create 
+ +  pulumi:pulumi:Stack notice-board-defaults create 
+Outputs:
+    board_name : [unknown]
+    board_title: "Community Notice Board"
+    lockbox_pin: [secret]
+
+Resources:
+    + 6 to create
+
+$ pulumi stack rm defaults --yes
+Stack 'defaults' has been removed!
+$ pulumi stack select dev

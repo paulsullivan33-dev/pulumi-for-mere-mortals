@@ -1,0 +1,50 @@
+$ pulumi stack select dev
+$ pulumi destroy --yes
+Previewing destroy (dev):
+
+ -  command:local:Command card-2 delete 
+ -  command:local:Command card-4 delete 
+ -  random:index:RandomPet board-name delete 
+ -  command:local:Command card-1 delete 
+ -  random:index:RandomPassword lockbox-pin delete 
+ -  command:local:Command card-5 delete 
+ -  command:local:Command card-3 delete 
+ -  pulumi:pulumi:Stack notice-board-dev delete 
+ -  pulumi:pulumi:Stack notice-board-dev delete 
+    pulumi:pulumi:Stack notice-board-dev  
+Resources:
+    - 8 to delete
+
+Destroying (dev):
+
+ -  command:local:Command card-1 deleting (0s) 
+ -  random:index:RandomPassword lockbox-pin deleting (0s) 
+ -  command:local:Command card-2 deleting (0s) 
+ -  command:local:Command card-3 deleting (0s) 
+ -  random:index:RandomPet board-name deleting (0s) 
+ -  command:local:Command card-4 deleting (0s) 
+ -  command:local:Command card-5 deleting (0s) 
+ -  random:index:RandomPassword lockbox-pin deleted (0.01s) 
+ -  command:local:Command card-1 deleted (0.02s) 
+ -  command:local:Command card-5 deleted (0.02s) 
+ -  command:local:Command card-2 deleted (0.04s) 
+ -  random:index:RandomPet board-name deleted (0.05s) 
+ -  command:local:Command card-3 deleted (0.05s) 
+ -  command:local:Command card-4 deleted (0.07s) 
+ -  pulumi:pulumi:Stack notice-board-dev deleting (0s) 
+ -  pulumi:pulumi:Stack notice-board-dev deleted (0.00s) 
+    pulumi:pulumi:Stack notice-board-dev  
+Resources:
+    - 8 deleted
+
+Duration: 1s
+
+The resources in the stack have been deleted, but the history and configuration associated with the stack are still maintained. 
+If you want to remove the stack completely, run `pulumi stack rm dev`.
+$ ls notice-*.txt
+ls: cannot access 'notice-*.txt': No such file or directory
+$ pulumi stack rm prod --yes
+Stack 'prod' has been removed!
+$ pulumi stack ls
+NAME  LAST UPDATE  RESOURCE COUNT
+dev   now          0

@@ -1,0 +1,20 @@
+Previewing update (dev):
+
+@ previewing update.....
+ +  pulumi:pulumi:Stack notice-board-dev create 
+@ previewing update....
+ +  random:index:RandomPassword lockbox-pin create 
+ +  random:index:RandomPet board-name create 
+ +  command:local:Command card-2 create 
+ +  command:local:Command card-1 create 
+ +  command:local:Command card-3 create 
+ +  pulumi:pulumi:Stack notice-board-dev create 
+Outputs:
+    board_name : [unknown]
+    board_title: "Village Hall Notice Board"
+    lockbox_pin: [secret]
+    signing_key: [secret]
+
+Resources:
+    + 6 to create
+

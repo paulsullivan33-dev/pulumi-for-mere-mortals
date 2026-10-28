@@ -1,0 +1,2 @@
+$ PULUMI_CONFIG_PASSPHRASE=wrong-guess pulumi preview
+error: getting stack configuration: get stack secrets manager: incorrect passphrase

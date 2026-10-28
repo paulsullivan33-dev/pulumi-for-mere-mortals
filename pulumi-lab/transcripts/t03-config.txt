@@ -1,0 +1,12 @@
+$ pulumi config set boardTitle "Village Hall Notice Board"
+$ pulumi config set --secret signingKey "oak-tree-42"
+$ pulumi config
+KEY         VALUE
+boardTitle  Village Hall Notice Board
+signingKey  [secret]
+$ cat Pulumi.dev.yaml
+encryptionsalt: v1:fDGzf/C4Oeg=:v1:w0m1LJ8TLbisZoGq:zS85Kbce3NojeBgqGwah/GBuSgX/Iw==
+config:
+  notice-board:boardTitle: Village Hall Notice Board
+  notice-board:signingKey:
+    secure: v1:efLT3dum3l5QZPY+:dAfLFSrpeXdouMn6bLvk2n3fDQ5tSJAtAhIi

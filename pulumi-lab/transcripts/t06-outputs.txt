@@ -1,0 +1,16 @@
+$ pulumi stack output
+Current stack outputs (4):
+    OUTPUT       VALUE
+    board_name   finer-earwig
+    board_title  Village Hall Notice Board
+    lockbox_pin  [secret]
+    signing_key  [secret]
+$ pulumi stack output --show-secrets
+Current stack outputs (4):
+    OUTPUT       VALUE
+    board_name   finer-earwig
+    board_title  Village Hall Notice Board
+    lockbox_pin  502094
+    signing_key  oak-tree-42
+$ pulumi stack output lockbox_pin --show-secrets
+502094

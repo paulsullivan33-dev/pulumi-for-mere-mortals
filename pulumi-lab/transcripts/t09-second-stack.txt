@@ -1,0 +1,58 @@
+$ pulumi stack init prod
+Created stack 'prod'
+$ pulumi config set boardTitle "Library Notice Board"
+$ pulumi config set pinCount 2
+$ pulumi up --yes
+Previewing update (prod):
+
+@ previewing update....
+ +  pulumi:pulumi:Stack notice-board-prod create 
+@ previewing update....
+ +  random:index:RandomPet board-name create 
+ +  random:index:RandomPassword lockbox-pin create 
+ +  command:local:Command card-1 create 
+ +  command:local:Command card-2 create 
+ +  pulumi:pulumi:Stack notice-board-prod create 
+Outputs:
+    board_name : [unknown]
+    board_title: "Library Notice Board"
+    lockbox_pin: [secret]
+
+Resources:
+    + 5 to create
+
+Updating (prod):
+
+@ updating.....
+ +  pulumi:pulumi:Stack notice-board-prod creating (0s) 
+ +  random:index:RandomPet board-name creating (0s) 
+ +  random:index:RandomPet board-name created (0.02s) 
+ +  command:local:Command card-2 creating (0s) 
+ +  command:local:Command card-1 creating (0s) 
+ +  random:index:RandomPassword lockbox-pin creating (0s) 
+ +  command:local:Command card-1 created (0.01s) 
+ +  command:local:Command card-2 created (0.02s) 
+ +  random:index:RandomPassword lockbox-pin created (0.17s) 
+@ updating....
+ +  pulumi:pulumi:Stack notice-board-prod created (0.56s) 
+Outputs:
+    board_name : "mint-kitten"
+    board_title: "Library Notice Board"
+    lockbox_pin: [secret]
+
+Resources:
+    + 5 created
+
+Duration: 3s
+
+$ pulumi stack output
+Current stack outputs (3):
+    OUTPUT       VALUE
+    board_name   mint-kitten
+    board_title  Library Notice Board
+    lockbox_pin  [secret]
+$ pulumi stack select dev
+$ pulumi stack ls
+NAME  LAST UPDATE     RESOURCE COUNT
+dev*  17 seconds ago  10
+prod  now             7

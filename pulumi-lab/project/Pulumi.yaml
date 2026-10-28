@@ -1,0 +1,7 @@
+name: notice-board
+runtime:
+  name: python
+  options:
+    toolchain: pip
+    virtualenv: venv
+description: A tiny Pulumi program that never leaves this machine. It invents a name and a secret PIN for a notice board, and writes notice cards as local text files.

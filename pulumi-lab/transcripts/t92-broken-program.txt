@@ -1,0 +1,129 @@
+$ pulumi stack init broken
+Created stack 'broken'
+$ pulumi preview
+Previewing update (broken):
+    pulumi:pulumi:Stack notice-board-broken  Creating virtual environment...
+@ previewing update.......
+    pulumi:pulumi:Stack notice-board-broken  Finished creating virtual environment
+    pulumi:pulumi:Stack notice-board-broken  Updating pip, setuptools, and wheel in virtual environment...
+    pulumi:pulumi:Stack notice-board-broken  Requirement already satisfied: pip in ./venv/lib/python3.12/site-packages (24.0)
+@ previewing update..................
+    pulumi:pulumi:Stack notice-board-broken  error: WARNING: Retrying (Retry(total=4, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='pypi.org', port=443): Read timed out. (read timeout=15)")': /simple/pip/
+@ previewing update..........
+    pulumi:pulumi:Stack notice-board-broken  Collecting pip
+    pulumi:pulumi:Stack notice-board-broken    Using cached pip-26.2.2-py3-none-any.whl.metadata (4.6 kB)
+    pulumi:pulumi:Stack notice-board-broken  Collecting setuptools
+    pulumi:pulumi:Stack notice-board-broken    Using cached setuptools-84.2.1-py3-none-any.whl.metadata (6.6 kB)
+    pulumi:pulumi:Stack notice-board-broken  Collecting wheel
+    pulumi:pulumi:Stack notice-board-broken    Using cached wheel-0.48.0-py3-none-any.whl.metadata (2.3 kB)
+    pulumi:pulumi:Stack notice-board-broken  Collecting packaging>=24.0 (from wheel)
+    pulumi:pulumi:Stack notice-board-broken    Using cached packaging-26.3-py3-none-any.whl.metadata (3.5 kB)
+    pulumi:pulumi:Stack notice-board-broken  Using cached pip-26.2.2-py3-none-any.whl (1.8 MB)
+    pulumi:pulumi:Stack notice-board-broken  Using cached setuptools-84.2.1-py3-none-any.whl (876 kB)
+    pulumi:pulumi:Stack notice-board-broken  Using cached wheel-0.48.0-py3-none-any.whl (33 kB)
+    pulumi:pulumi:Stack notice-board-broken  Using cached packaging-26.3-py3-none-any.whl (129 kB)
+    pulumi:pulumi:Stack notice-board-broken  Installing collected packages: setuptools, pip, packaging, wheel
+@ previewing update....
+    pulumi:pulumi:Stack notice-board-broken    Attempting uninstall: pip
+    pulumi:pulumi:Stack notice-board-broken      Found existing installation: pip 24.0
+    pulumi:pulumi:Stack notice-board-broken      Uninstalling pip-24.0:
+    pulumi:pulumi:Stack notice-board-broken        Successfully uninstalled pip-24.0
+@ previewing update.....
+    pulumi:pulumi:Stack notice-board-broken  Successfully installed packaging-26.3 pip-26.2.2 setuptools-84.2.1 wheel-0.48.0
+    pulumi:pulumi:Stack notice-board-broken  Finished updating
+    pulumi:pulumi:Stack notice-board-broken  Installing dependencies in virtual environment...
+@ previewing update....
+    pulumi:pulumi:Stack notice-board-broken  Collecting pulumi<4.0.0,>=3.0.0 (from -r requirements.txt (line 1))
+    pulumi:pulumi:Stack notice-board-broken    Using cached pulumi-3.272.0-py3-none-any.whl.metadata (4.0 kB)
+    pulumi:pulumi:Stack notice-board-broken  Collecting pulumi-random>=4.0.0 (from -r requirements.txt (line 2))
+    pulumi:pulumi:Stack notice-board-broken    Using cached pulumi_random-4.21.4-py3-none-any.whl.metadata (3.3 kB)
+    pulumi:pulumi:Stack notice-board-broken  Collecting pulumi-command>=1.0.0 (from -r requirements.txt (line 3))
+    pulumi:pulumi:Stack notice-board-broken    Using cached pulumi_command-1.2.1-py3-none-any.whl.metadata (16 kB)
+    pulumi:pulumi:Stack notice-board-broken  Collecting debugpy~=1.8.7 (from pulumi<4.0.0,>=3.0.0->-r requirements.txt (line 1))
+    pulumi:pulumi:Stack notice-board-broken    Using cached debugpy-1.8.22-cp312-cp312-manylinux_2_34_x86_64.whl.metadata (1.4 kB)
+    pulumi:pulumi:Stack notice-board-broken  Collecting dill~=0.4 (from pulumi<4.0.0,>=3.0.0->-r requirements.txt (line 1))
+    pulumi:pulumi:Stack notice-board-broken    Using cached dill-0.4.1-py3-none-any.whl.metadata (10 kB)
+@ previewing update....
+    pulumi:pulumi:Stack notice-board-broken  Collecting grpcio<2,>=1.68.1 (from pulumi<4.0.0,>=3.0.0->-r requirements.txt (line 1))
+    pulumi:pulumi:Stack notice-board-broken    Using cached grpcio-1.85.0-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (3.8 kB)
+    pulumi:pulumi:Stack notice-board-broken  Collecting opentelemetry-api>=1.20.0 (from pulumi<4.0.0,>=3.0.0->-r requirements.txt (line 1))
+    pulumi:pulumi:Stack notice-board-broken    Using cached opentelemetry_api-1.45.1-py3-none-any.whl.metadata (1.4 kB)
+    pulumi:pulumi:Stack notice-board-broken  Collecting opentelemetry-exporter-otlp-proto-grpc>=1.20.0 (from pulumi<4.0.0,>=3.0.0->-r requirements.txt (line 1))
+    pulumi:pulumi:Stack notice-board-broken    Using cached opentelemetry_exporter_otlp_proto_grpc-1.45.1-py3-none-any.whl.metadata (2.6 kB)
+    pulumi:pulumi:Stack notice-board-broken  Collecting opentelemetry-instrumentation-grpc>=0.41b0 (from pulumi<4.0.0,>=3.0.0->-r requirements.txt (line 1))
+    pulumi:pulumi:Stack notice-board-broken    Using cached opentelemetry_instrumentation_grpc-0.66b1-py3-none-any.whl.metadata (1.9 kB)
+    pulumi:pulumi:Stack notice-board-broken  Collecting opentelemetry-sdk>=1.20.0 (from pulumi<4.0.0,>=3.0.0->-r requirements.txt (line 1))
+    pulumi:pulumi:Stack notice-board-broken    Using cached opentelemetry_sdk-1.45.1-py3-none-any.whl.metadata (1.6 kB)
+    pulumi:pulumi:Stack notice-board-broken  Requirement already satisfied: packaging>=26.0 in ./venv/lib/python3.12/site-packages (from pulumi<4.0.0,>=3.0.0->-r requirements.txt (line 1)) (26.3)
+@ previewing update....
+    pulumi:pulumi:Stack notice-board-broken  Collecting protobuf<7,>=3.20.3 (from pulumi<4.0.0,>=3.0.0->-r requirements.txt (line 1))
+    pulumi:pulumi:Stack notice-board-broken    Using cached protobuf-6.33.6-cp39-abi3-manylinux2014_x86_64.whl.metadata (593 bytes)
+    pulumi:pulumi:Stack notice-board-broken  Collecting pyyaml~=6.0 (from pulumi<4.0.0,>=3.0.0->-r requirements.txt (line 1))
+    pulumi:pulumi:Stack notice-board-broken    Using cached pyyaml-6.0.3-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (2.4 kB)
+    pulumi:pulumi:Stack notice-board-broken  Collecting semver~=3.0 (from pulumi<4.0.0,>=3.0.0->-r requirements.txt (line 1))
+    pulumi:pulumi:Stack notice-board-broken    Using cached semver-3.1.0-py3-none-any.whl.metadata (6.9 kB)
+    pulumi:pulumi:Stack notice-board-broken  Collecting typing-extensions<5,>=4.11 (from pulumi<4.0.0,>=3.0.0->-r requirements.txt (line 1))
+    pulumi:pulumi:Stack notice-board-broken    Using cached typing_extensions-4.16.0-py3-none-any.whl.metadata (3.3 kB)
+    pulumi:pulumi:Stack notice-board-broken  Collecting parver>=0.2.1 (from pulumi-command>=1.0.0->-r requirements.txt (line 3))
+    pulumi:pulumi:Stack notice-board-broken    Using cached parver-1.0.1.post0-py3-none-any.whl.metadata (2.1 kB)
+    pulumi:pulumi:Stack notice-board-broken  Collecting googleapis-common-protos~=1.57 (from opentelemetry-exporter-otlp-proto-grpc>=1.20.0->pulumi<4.0.0,>=3.0.0->-r requirements.txt (line 1))
+    pulumi:pulumi:Stack notice-board-broken    Using cached googleapis_common_protos-1.76.0-py3-none-any.whl.metadata (8.5 kB)
+    pulumi:pulumi:Stack notice-board-broken  Collecting opentelemetry-exporter-otlp-common==0.66b1 (from opentelemetry-exporter-otlp-proto-grpc>=1.20.0->pulumi<4.0.0,>=3.0.0->-r requirements.txt (line 1))
+    pulumi:pulumi:Stack notice-board-broken    Using cached opentelemetry_exporter_otlp_common-0.66b1-py3-none-any.whl.metadata (1.9 kB)
+    pulumi:pulumi:Stack notice-board-broken  Collecting opentelemetry-exporter-otlp-proto-common==1.45.1 (from opentelemetry-exporter-otlp-proto-grpc>=1.20.0->pulumi<4.0.0,>=3.0.0->-r requirements.txt (line 1))
+    pulumi:pulumi:Stack notice-board-broken    Using cached opentelemetry_exporter_otlp_proto_common-1.45.1-py3-none-any.whl.metadata (1.8 kB)
+    pulumi:pulumi:Stack notice-board-broken  Collecting opentelemetry-proto==1.45.1 (from opentelemetry-exporter-otlp-proto-grpc>=1.20.0->pulumi<4.0.0,>=3.0.0->-r requirements.txt (line 1))
+    pulumi:pulumi:Stack notice-board-broken    Using cached opentelemetry_proto-1.45.1-py3-none-any.whl.metadata (2.3 kB)
+    pulumi:pulumi:Stack notice-board-broken  Collecting opentelemetry-semantic-conventions==0.66b1 (from opentelemetry-sdk>=1.20.0->pulumi<4.0.0,>=3.0.0->-r requirements.txt (line 1))
+    pulumi:pulumi:Stack notice-board-broken    Using cached opentelemetry_semantic_conventions-0.66b1-py3-none-any.whl.metadata (2.4 kB)
+    pulumi:pulumi:Stack notice-board-broken  Collecting opentelemetry-instrumentation==0.66b1 (from opentelemetry-instrumentation-grpc>=0.41b0->pulumi<4.0.0,>=3.0.0->-r requirements.txt (line 1))
+    pulumi:pulumi:Stack notice-board-broken    Using cached opentelemetry_instrumentation-0.66b1-py3-none-any.whl.metadata (7.2 kB)
+@ previewing update....
+    pulumi:pulumi:Stack notice-board-broken  Collecting wrapt<3.0.0,>=1.0.0 (from opentelemetry-instrumentation-grpc>=0.41b0->pulumi<4.0.0,>=3.0.0->-r requirements.txt (line 1))
+    pulumi:pulumi:Stack notice-board-broken    Using cached wrapt-2.5.1-cp312-cp312-manylinux1_x86_64.manylinux_2_28_x86_64.manylinux_2_5_x86_64.whl.metadata (7.6 kB)
+    pulumi:pulumi:Stack notice-board-broken  Using cached pulumi-3.272.0-py3-none-any.whl (441 kB)
+    pulumi:pulumi:Stack notice-board-broken  Using cached debugpy-1.8.22-cp312-cp312-manylinux_2_34_x86_64.whl (4.0 MB)
+    pulumi:pulumi:Stack notice-board-broken  Using cached dill-0.4.1-py3-none-any.whl (120 kB)
+    pulumi:pulumi:Stack notice-board-broken  Using cached grpcio-1.85.0-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (7.4 MB)
+    pulumi:pulumi:Stack notice-board-broken  Using cached protobuf-6.33.6-cp39-abi3-manylinux2014_x86_64.whl (323 kB)
+    pulumi:pulumi:Stack notice-board-broken  Using cached pyyaml-6.0.3-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (807 kB)
+    pulumi:pulumi:Stack notice-board-broken  Using cached semver-3.1.0-py3-none-any.whl (18 kB)
+    pulumi:pulumi:Stack notice-board-broken  Using cached typing_extensions-4.16.0-py3-none-any.whl (45 kB)
+    pulumi:pulumi:Stack notice-board-broken  Using cached pulumi_random-4.21.4-py3-none-any.whl (36 kB)
+    pulumi:pulumi:Stack notice-board-broken  Using cached pulumi_command-1.2.1-py3-none-any.whl (36 kB)
+    pulumi:pulumi:Stack notice-board-broken  Using cached opentelemetry_api-1.45.1-py3-none-any.whl (60 kB)
+    pulumi:pulumi:Stack notice-board-broken  Using cached opentelemetry_exporter_otlp_proto_grpc-1.45.1-py3-none-any.whl (19 kB)
+    pulumi:pulumi:Stack notice-board-broken  Using cached opentelemetry_exporter_otlp_common-0.66b1-py3-none-any.whl (12 kB)
+    pulumi:pulumi:Stack notice-board-broken  Using cached opentelemetry_exporter_otlp_proto_common-1.45.1-py3-none-any.whl (15 kB)
+    pulumi:pulumi:Stack notice-board-broken  Using cached opentelemetry_proto-1.45.1-py3-none-any.whl (72 kB)
+    pulumi:pulumi:Stack notice-board-broken  Using cached googleapis_common_protos-1.76.0-py3-none-any.whl (307 kB)
+    pulumi:pulumi:Stack notice-board-broken  Using cached opentelemetry_sdk-1.45.1-py3-none-any.whl (140 kB)
+    pulumi:pulumi:Stack notice-board-broken  Using cached opentelemetry_semantic_conventions-0.66b1-py3-none-any.whl (206 kB)
+    pulumi:pulumi:Stack notice-board-broken  Using cached opentelemetry_instrumentation_grpc-0.66b1-py3-none-any.whl (24 kB)
+    pulumi:pulumi:Stack notice-board-broken  Using cached opentelemetry_instrumentation-0.66b1-py3-none-any.whl (36 kB)
+    pulumi:pulumi:Stack notice-board-broken  Using cached wrapt-2.5.1-cp312-cp312-manylinux1_x86_64.manylinux_2_28_x86_64.manylinux_2_5_x86_64.whl (250 kB)
+    pulumi:pulumi:Stack notice-board-broken  Using cached parver-1.0.1.post0-py3-none-any.whl (20 kB)
+    pulumi:pulumi:Stack notice-board-broken  Installing collected packages: wrapt, typing-extensions, semver, pyyaml, protobuf, parver, dill, debugpy, opentelemetry-proto, opentelemetry-api, grpcio, googleapis-common-protos, opentelemetry-semantic-conventions, opentelemetry-exporter-otlp-proto-common, opentelemetry-sdk, opentelemetry-instrumentation, opentelemetry-instrumentation-grpc, opentelemetry-exporter-otlp-common, opentelemetry-exporter-otlp-proto-grpc, pulumi, pulumi-random, pulumi-command
+@ previewing update.......
+    pulumi:pulumi:Stack notice-board-broken  
+    pulumi:pulumi:Stack notice-board-broken  Successfully installed debugpy-1.8.22 dill-0.4.1 googleapis-common-protos-1.76.0 grpcio-1.85.0 opentelemetry-api-1.45.1 opentelemetry-exporter-otlp-common-0.66b1 opentelemetry-exporter-otlp-proto-common-1.45.1 opentelemetry-exporter-otlp-proto-grpc-1.45.1 opentelemetry-instrumentation-0.66b1 opentelemetry-instrumentation-grpc-0.66b1 opentelemetry-proto-1.45.1 opentelemetry-sdk-1.45.1 opentelemetry-semantic-conventions-0.66b1 parver-1.0.1.post0 protobuf-6.33.6 pulumi-3.272.0 pulumi-command-1.2.1 pulumi-random-4.21.4 pyyaml-6.0.3 semver-3.1.0 typing-extensions-4.16.0 wrapt-2.5.1
+    pulumi:pulumi:Stack notice-board-broken  Finished installing dependencies
+
+@ previewing update.....
+ +  pulumi:pulumi:Stack notice-board-broken create Finished installing dependencies
+ +  random:index:RandomPet board-name create 
+ +  pulumi:pulumi:Stack notice-board-broken create error: Program failed with an unhandled exception:
+ +  pulumi:pulumi:Stack notice-board-broken create 1 error
+Diagnostics:
+  pulumi:pulumi:Stack (notice-board-broken):
+    error: Program failed with an unhandled exception:
+    Traceback (most recent call last):
+      File "/home/hatch/workspace/build-check/pulumi-scratch/lab/broken-board/__main__.py", line 33, in <module>
+        this_variable_does_not_exist()
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    NameError: name 'this_variable_does_not_exist' is not defined
+
+Resources:
+    + 2 to create
+    1 errored
+

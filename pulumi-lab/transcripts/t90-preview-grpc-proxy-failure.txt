@@ -1,0 +1,273 @@
+$ pulumi preview
+Previewing update (dev):
+    pulumi:pulumi:Stack notice-board-dev  Creating virtual environment...
+@ previewing update........
+    pulumi:pulumi:Stack notice-board-dev  Finished creating virtual environment
+    pulumi:pulumi:Stack notice-board-dev  Updating pip, setuptools, and wheel in virtual environment...
+    pulumi:pulumi:Stack notice-board-dev  Requirement already satisfied: pip in ./venv/lib/python3.12/site-packages (24.0)
+@ previewing update....
+    pulumi:pulumi:Stack notice-board-dev  Collecting pip
+    pulumi:pulumi:Stack notice-board-dev    Using cached pip-26.2.2-py3-none-any.whl.metadata (4.6 kB)
+@ previewing update....
+    pulumi:pulumi:Stack notice-board-dev  Collecting setuptools
+    pulumi:pulumi:Stack notice-board-dev    Using cached setuptools-84.2.1-py3-none-any.whl.metadata (6.6 kB)
+    pulumi:pulumi:Stack notice-board-dev  Collecting wheel
+    pulumi:pulumi:Stack notice-board-dev    Using cached wheel-0.48.0-py3-none-any.whl.metadata (2.3 kB)
+@ previewing update....
+    pulumi:pulumi:Stack notice-board-dev  Collecting packaging>=24.0 (from wheel)
+    pulumi:pulumi:Stack notice-board-dev    Using cached packaging-26.3-py3-none-any.whl.metadata (3.5 kB)
+    pulumi:pulumi:Stack notice-board-dev  Using cached pip-26.2.2-py3-none-any.whl (1.8 MB)
+    pulumi:pulumi:Stack notice-board-dev  Using cached setuptools-84.2.1-py3-none-any.whl (876 kB)
+    pulumi:pulumi:Stack notice-board-dev  Using cached wheel-0.48.0-py3-none-any.whl (33 kB)
+    pulumi:pulumi:Stack notice-board-dev  Using cached packaging-26.3-py3-none-any.whl (129 kB)
+    pulumi:pulumi:Stack notice-board-dev  Installing collected packages: setuptools, pip, packaging, wheel
+@ previewing update....
+    pulumi:pulumi:Stack notice-board-dev    Attempting uninstall: pip
+    pulumi:pulumi:Stack notice-board-dev      Found existing installation: pip 24.0
+    pulumi:pulumi:Stack notice-board-dev      Uninstalling pip-24.0:
+    pulumi:pulumi:Stack notice-board-dev        Successfully uninstalled pip-24.0
+@ previewing update.....
+    pulumi:pulumi:Stack notice-board-dev  Successfully installed packaging-26.3 pip-26.2.2 setuptools-84.2.1 wheel-0.48.0
+    pulumi:pulumi:Stack notice-board-dev  Finished updating
+    pulumi:pulumi:Stack notice-board-dev  Installing dependencies in virtual environment...
+@ previewing update.....
+    pulumi:pulumi:Stack notice-board-dev  Collecting pulumi<4.0.0,>=3.0.0 (from -r requirements.txt (line 1))
+@ previewing update....
+    pulumi:pulumi:Stack notice-board-dev    Downloading pulumi-3.272.0-py3-none-any.whl.metadata (4.0 kB)
+@ previewing update....
+    pulumi:pulumi:Stack notice-board-dev  Collecting pulumi-random>=4.0.0 (from -r requirements.txt (line 2))
+    pulumi:pulumi:Stack notice-board-dev    Downloading pulumi_random-4.21.4-py3-none-any.whl.metadata (3.3 kB)
+@ previewing update....
+    pulumi:pulumi:Stack notice-board-dev  Collecting pulumi-command>=1.0.0 (from -r requirements.txt (line 3))
+    pulumi:pulumi:Stack notice-board-dev    Downloading pulumi_command-1.2.1-py3-none-any.whl.metadata (16 kB)
+@ previewing update....
+    pulumi:pulumi:Stack notice-board-dev  Collecting debugpy~=1.8.7 (from pulumi<4.0.0,>=3.0.0->-r requirements.txt (line 1))
+    pulumi:pulumi:Stack notice-board-dev    Using cached debugpy-1.8.22-cp312-cp312-manylinux_2_34_x86_64.whl.metadata (1.4 kB)
+    pulumi:pulumi:Stack notice-board-dev  Collecting dill~=0.4 (from pulumi<4.0.0,>=3.0.0->-r requirements.txt (line 1))
+    pulumi:pulumi:Stack notice-board-dev    Using cached dill-0.4.1-py3-none-any.whl.metadata (10 kB)
+@ previewing update.....
+    pulumi:pulumi:Stack notice-board-dev  Collecting grpcio<2,>=1.68.1 (from pulumi<4.0.0,>=3.0.0->-r requirements.txt (line 1))
+    pulumi:pulumi:Stack notice-board-dev    Downloading grpcio-1.85.0-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (3.8 kB)
+@ previewing update....
+    pulumi:pulumi:Stack notice-board-dev  Collecting opentelemetry-api>=1.20.0 (from pulumi<4.0.0,>=3.0.0->-r requirements.txt (line 1))
+    pulumi:pulumi:Stack notice-board-dev    Using cached opentelemetry_api-1.45.1-py3-none-any.whl.metadata (1.4 kB)
+    pulumi:pulumi:Stack notice-board-dev  Collecting opentelemetry-exporter-otlp-proto-grpc>=1.20.0 (from pulumi<4.0.0,>=3.0.0->-r requirements.txt (line 1))
+    pulumi:pulumi:Stack notice-board-dev    Using cached opentelemetry_exporter_otlp_proto_grpc-1.45.1-py3-none-any.whl.metadata (2.6 kB)
+@ previewing update....
+    pulumi:pulumi:Stack notice-board-dev  Collecting opentelemetry-instrumentation-grpc>=0.41b0 (from pulumi<4.0.0,>=3.0.0->-r requirements.txt (line 1))
+    pulumi:pulumi:Stack notice-board-dev    Downloading opentelemetry_instrumentation_grpc-0.66b1-py3-none-any.whl.metadata (1.9 kB)
+@ previewing update....
+    pulumi:pulumi:Stack notice-board-dev  Collecting opentelemetry-sdk>=1.20.0 (from pulumi<4.0.0,>=3.0.0->-r requirements.txt (line 1))
+    pulumi:pulumi:Stack notice-board-dev    Using cached opentelemetry_sdk-1.45.1-py3-none-any.whl.metadata (1.6 kB)
+    pulumi:pulumi:Stack notice-board-dev  Requirement already satisfied: packaging>=26.0 in ./venv/lib/python3.12/site-packages (from pulumi<4.0.0,>=3.0.0->-r requirements.txt (line 1)) (26.3)
+@ previewing update....
+    pulumi:pulumi:Stack notice-board-dev  Collecting protobuf<7,>=3.20.3 (from pulumi<4.0.0,>=3.0.0->-r requirements.txt (line 1))
+    pulumi:pulumi:Stack notice-board-dev    Using cached protobuf-6.33.6-cp39-abi3-manylinux2014_x86_64.whl.metadata (593 bytes)
+    pulumi:pulumi:Stack notice-board-dev  Collecting pyyaml~=6.0 (from pulumi<4.0.0,>=3.0.0->-r requirements.txt (line 1))
+    pulumi:pulumi:Stack notice-board-dev    Using cached pyyaml-6.0.3-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (2.4 kB)
+    pulumi:pulumi:Stack notice-board-dev  Collecting semver~=3.0 (from pulumi<4.0.0,>=3.0.0->-r requirements.txt (line 1))
+    pulumi:pulumi:Stack notice-board-dev    Using cached semver-3.1.0-py3-none-any.whl.metadata (6.9 kB)
+@ previewing update....
+    pulumi:pulumi:Stack notice-board-dev  Collecting typing-extensions<5,>=4.11 (from pulumi<4.0.0,>=3.0.0->-r requirements.txt (line 1))
+    pulumi:pulumi:Stack notice-board-dev    Using cached typing_extensions-4.16.0-py3-none-any.whl.metadata (3.3 kB)
+@ previewing update....
+    pulumi:pulumi:Stack notice-board-dev  Collecting parver>=0.2.1 (from pulumi-command>=1.0.0->-r requirements.txt (line 3))
+@ previewing update....
+    pulumi:pulumi:Stack notice-board-dev    Downloading parver-1.0.1.post0-py3-none-any.whl.metadata (2.1 kB)
+@ previewing update....
+    pulumi:pulumi:Stack notice-board-dev  Collecting googleapis-common-protos~=1.57 (from opentelemetry-exporter-otlp-proto-grpc>=1.20.0->pulumi<4.0.0,>=3.0.0->-r requirements.txt (line 1))
+    pulumi:pulumi:Stack notice-board-dev    Using cached googleapis_common_protos-1.76.0-py3-none-any.whl.metadata (8.5 kB)
+    pulumi:pulumi:Stack notice-board-dev  Collecting opentelemetry-exporter-otlp-common==0.66b1 (from opentelemetry-exporter-otlp-proto-grpc>=1.20.0->pulumi<4.0.0,>=3.0.0->-r requirements.txt (line 1))
+    pulumi:pulumi:Stack notice-board-dev    Using cached opentelemetry_exporter_otlp_common-0.66b1-py3-none-any.whl.metadata (1.9 kB)
+    pulumi:pulumi:Stack notice-board-dev  Collecting opentelemetry-exporter-otlp-proto-common==1.45.1 (from opentelemetry-exporter-otlp-proto-grpc>=1.20.0->pulumi<4.0.0,>=3.0.0->-r requirements.txt (line 1))
+@ previewing update....
+    pulumi:pulumi:Stack notice-board-dev    Using cached opentelemetry_exporter_otlp_proto_common-1.45.1-py3-none-any.whl.metadata (1.8 kB)
+    pulumi:pulumi:Stack notice-board-dev  Collecting opentelemetry-proto==1.45.1 (from opentelemetry-exporter-otlp-proto-grpc>=1.20.0->pulumi<4.0.0,>=3.0.0->-r requirements.txt (line 1))
+    pulumi:pulumi:Stack notice-board-dev    Using cached opentelemetry_proto-1.45.1-py3-none-any.whl.metadata (2.3 kB)
+@ previewing update....
+    pulumi:pulumi:Stack notice-board-dev  Collecting opentelemetry-semantic-conventions==0.66b1 (from opentelemetry-sdk>=1.20.0->pulumi<4.0.0,>=3.0.0->-r requirements.txt (line 1))
+    pulumi:pulumi:Stack notice-board-dev    Using cached opentelemetry_semantic_conventions-0.66b1-py3-none-any.whl.metadata (2.4 kB)
+@ previewing update....
+    pulumi:pulumi:Stack notice-board-dev  Collecting opentelemetry-instrumentation==0.66b1 (from opentelemetry-instrumentation-grpc>=0.41b0->pulumi<4.0.0,>=3.0.0->-r requirements.txt (line 1))
+    pulumi:pulumi:Stack notice-board-dev    Using cached opentelemetry_instrumentation-0.66b1-py3-none-any.whl.metadata (7.2 kB)
+@ previewing update....
+    pulumi:pulumi:Stack notice-board-dev  Collecting wrapt<3.0.0,>=1.0.0 (from opentelemetry-instrumentation-grpc>=0.41b0->pulumi<4.0.0,>=3.0.0->-r requirements.txt (line 1))
+    pulumi:pulumi:Stack notice-board-dev    Using cached wrapt-2.5.1-cp312-cp312-manylinux1_x86_64.manylinux_2_28_x86_64.manylinux_2_5_x86_64.whl.metadata (7.6 kB)
+    pulumi:pulumi:Stack notice-board-dev  Downloading pulumi-3.272.0-py3-none-any.whl (441 kB)
+    pulumi:pulumi:Stack notice-board-dev  Using cached debugpy-1.8.22-cp312-cp312-manylinux_2_34_x86_64.whl (4.0 MB)
+    pulumi:pulumi:Stack notice-board-dev  Using cached dill-0.4.1-py3-none-any.whl (120 kB)
+@ previewing update....
+    pulumi:pulumi:Stack notice-board-dev  Downloading grpcio-1.85.0-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (7.4 MB)
+@ previewing update......
+    pulumi:pulumi:Stack notice-board-dev     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 7.4/7.4 MB 2.5 MB/s  0:00:02
+    pulumi:pulumi:Stack notice-board-dev  
+    pulumi:pulumi:Stack notice-board-dev  Using cached protobuf-6.33.6-cp39-abi3-manylinux2014_x86_64.whl (323 kB)
+    pulumi:pulumi:Stack notice-board-dev  Using cached pyyaml-6.0.3-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (807 kB)
+    pulumi:pulumi:Stack notice-board-dev  Using cached semver-3.1.0-py3-none-any.whl (18 kB)
+    pulumi:pulumi:Stack notice-board-dev  Using cached typing_extensions-4.16.0-py3-none-any.whl (45 kB)
+    pulumi:pulumi:Stack notice-board-dev  Downloading pulumi_random-4.21.4-py3-none-any.whl (36 kB)
+@ previewing update....
+    pulumi:pulumi:Stack notice-board-dev  Downloading pulumi_command-1.2.1-py3-none-any.whl (36 kB)
+    pulumi:pulumi:Stack notice-board-dev  Using cached opentelemetry_api-1.45.1-py3-none-any.whl (60 kB)
+    pulumi:pulumi:Stack notice-board-dev  Using cached opentelemetry_exporter_otlp_proto_grpc-1.45.1-py3-none-any.whl (19 kB)
+    pulumi:pulumi:Stack notice-board-dev  Using cached opentelemetry_exporter_otlp_common-0.66b1-py3-none-any.whl (12 kB)
+    pulumi:pulumi:Stack notice-board-dev  Using cached opentelemetry_exporter_otlp_proto_common-1.45.1-py3-none-any.whl (15 kB)
+    pulumi:pulumi:Stack notice-board-dev  Using cached opentelemetry_proto-1.45.1-py3-none-any.whl (72 kB)
+    pulumi:pulumi:Stack notice-board-dev  Using cached googleapis_common_protos-1.76.0-py3-none-any.whl (307 kB)
+    pulumi:pulumi:Stack notice-board-dev  Using cached opentelemetry_sdk-1.45.1-py3-none-any.whl (140 kB)
+    pulumi:pulumi:Stack notice-board-dev  Using cached opentelemetry_semantic_conventions-0.66b1-py3-none-any.whl (206 kB)
+    pulumi:pulumi:Stack notice-board-dev  Downloading opentelemetry_instrumentation_grpc-0.66b1-py3-none-any.whl (24 kB)
+@ previewing update....
+    pulumi:pulumi:Stack notice-board-dev  Downloading opentelemetry_instrumentation-0.66b1-py3-none-any.whl (36 kB)
+    pulumi:pulumi:Stack notice-board-dev  Using cached wrapt-2.5.1-cp312-cp312-manylinux1_x86_64.manylinux_2_28_x86_64.manylinux_2_5_x86_64.whl (250 kB)
+@ previewing update....
+    pulumi:pulumi:Stack notice-board-dev  Downloading parver-1.0.1.post0-py3-none-any.whl (20 kB)
+    pulumi:pulumi:Stack notice-board-dev  Installing collected packages: wrapt, typing-extensions, semver, pyyaml, protobuf, parver, dill, debugpy, opentelemetry-proto, opentelemetry-api, grpcio, googleapis-common-protos, opentelemetry-semantic-conventions, opentelemetry-exporter-otlp-proto-common, opentelemetry-sdk, opentelemetry-instrumentation, opentelemetry-instrumentation-grpc, opentelemetry-exporter-otlp-common, opentelemetry-exporter-otlp-proto-grpc, pulumi, pulumi-random, pulumi-command
+@ previewing update.......
+    pulumi:pulumi:Stack notice-board-dev  
+    pulumi:pulumi:Stack notice-board-dev  Successfully installed debugpy-1.8.22 dill-0.4.1 googleapis-common-protos-1.76.0 grpcio-1.85.0 opentelemetry-api-1.45.1 opentelemetry-exporter-otlp-common-0.66b1 opentelemetry-exporter-otlp-proto-common-1.45.1 opentelemetry-exporter-otlp-proto-grpc-1.45.1 opentelemetry-instrumentation-0.66b1 opentelemetry-instrumentation-grpc-0.66b1 opentelemetry-proto-1.45.1 opentelemetry-sdk-1.45.1 opentelemetry-semantic-conventions-0.66b1 parver-1.0.1.post0 protobuf-6.33.6 pulumi-3.272.0 pulumi-command-1.2.1 pulumi-random-4.21.4 pyyaml-6.0.3 semver-3.1.0 typing-extensions-4.16.0 wrapt-2.5.1
+    pulumi:pulumi:Stack notice-board-dev  Finished installing dependencies
+@ previewing update......
+Downloading plugin random-4.21.4: starting
+Downloading plugin command-1.2.1: starting
+@ previewing update.........
+Downloading plugin command-1.2.1: done
+Installing plugin command-1.2.1: starting
+Downloading plugin random-4.21.4: done
+Installing plugin random-4.21.4: starting
+Installing plugin command-1.2.1: done
+@ previewing update....
+Installing plugin random-4.21.4: done
+
+@ previewing update...........................................
+    pulumi:pulumi:Stack notice-board-dev  Traceback (most recent call last):
+    pulumi:pulumi:Stack notice-board-dev    File "/home/hatch/workspace/build-check/pulumi-scratch/lab/notice-board/venv/lib/python3.12/site-packages/pulumi/runtime/settings.py", line 504, in _load_monitor_feature_support
+    pulumi:pulumi:Stack notice-board-dev      deployment_info = await asyncio.get_running_loop().run_in_executor(
+    pulumi:pulumi:Stack notice-board-dev                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    pulumi:pulumi:Stack notice-board-dev    File "/usr/lib/python3.12/concurrent/futures/thread.py", line 58, in run
+    pulumi:pulumi:Stack notice-board-dev      result = self.fn(*self.args, **self.kwargs)
+    pulumi:pulumi:Stack notice-board-dev               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    pulumi:pulumi:Stack notice-board-dev    File "/home/hatch/workspace/build-check/pulumi-scratch/lab/notice-board/venv/lib/python3.12/site-packages/pulumi/runtime/_context.py", line 39, in wrapper
+    pulumi:pulumi:Stack notice-board-dev      return python_ctx.run(run, *args, **kwargs)
+    pulumi:pulumi:Stack notice-board-dev             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    pulumi:pulumi:Stack notice-board-dev    File "/home/hatch/workspace/build-check/pulumi-scratch/lab/notice-board/venv/lib/python3.12/site-packages/pulumi/runtime/_context.py", line 34, in run
+    pulumi:pulumi:Stack notice-board-dev      return fn(*args, **kwargs)
+    pulumi:pulumi:Stack notice-board-dev             ^^^^^^^^^^^^^^^^^^^
+    pulumi:pulumi:Stack notice-board-dev    File "/home/hatch/workspace/build-check/pulumi-scratch/lab/notice-board/venv/lib/python3.12/site-packages/pulumi/runtime/settings.py", line 507, in <lambda>
+    pulumi:pulumi:Stack notice-board-dev      lambda: SETTINGS.monitor.GetDeploymentInfo(empty_pb2.Empty())
+    pulumi:pulumi:Stack notice-board-dev              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    pulumi:pulumi:Stack notice-board-dev    File "/home/hatch/workspace/build-check/pulumi-scratch/lab/notice-board/venv/lib/python3.12/site-packages/grpc/_channel.py", line 1168, in __call__
+    pulumi:pulumi:Stack notice-board-dev      return _end_unary_response_blocking(state, call, False, None)
+    pulumi:pulumi:Stack notice-board-dev             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    pulumi:pulumi:Stack notice-board-dev    File "/home/hatch/workspace/build-check/pulumi-scratch/lab/notice-board/venv/lib/python3.12/site-packages/grpc/_channel.py", line 999, in _end_unary_response_blocking
+    pulumi:pulumi:Stack notice-board-dev      raise _InactiveRpcError(state)  # pytype: disable=not-instantiable
+    pulumi:pulumi:Stack notice-board-dev      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    pulumi:pulumi:Stack notice-board-dev  grpc._channel._InactiveRpcError: <_InactiveRpcError of RPC that terminated with:
+    pulumi:pulumi:Stack notice-board-dev  	status = StatusCode.UNAVAILABLE
+    pulumi:pulumi:Stack notice-board-dev  	details = "failed to connect to all addresses; last error: UNKNOWN: ipv4:127.0.0.1:35567: connection attempt timed out before receiving SETTINGS frame"
+    pulumi:pulumi:Stack notice-board-dev  	debug_error_string = "UNAVAILABLE:failed to connect to all addresses; last error: UNKNOWN: ipv4:127.0.0.1:35567: connection attempt timed out before receiving SETTINGS frame"
+    pulumi:pulumi:Stack notice-board-dev  >
+    pulumi:pulumi:Stack notice-board-dev  During handling of the above exception, another exception occurred:
+    pulumi:pulumi:Stack notice-board-dev  Traceback (most recent call last):
+    pulumi:pulumi:Stack notice-board-dev    File "/home/hatch/workspace/build-check/pulumi-scratch/pulumi/pulumi-language-python-exec", line 232, in <module>
+    pulumi:pulumi:Stack notice-board-dev      loop.run_until_complete(coro)
+    pulumi:pulumi:Stack notice-board-dev    File "/usr/lib/python3.12/asyncio/base_events.py", line 687, in run_until_complete
+    pulumi:pulumi:Stack notice-board-dev      return future.result()
+    pulumi:pulumi:Stack notice-board-dev             ^^^^^^^^^^^^^^^
+    pulumi:pulumi:Stack notice-board-dev    File "/home/hatch/workspace/build-check/pulumi-scratch/lab/notice-board/venv/lib/python3.12/site-packages/pulumi/runtime/stack.py", line 253, in run_in_stack
+    pulumi:pulumi:Stack notice-board-dev      await _load_monitor_feature_support()
+    pulumi:pulumi:Stack notice-board-dev    File "/home/hatch/workspace/build-check/pulumi-scratch/lab/notice-board/venv/lib/python3.12/site-packages/pulumi/runtime/settings.py", line 514, in _load_monitor_feature_support
+    pulumi:pulumi:Stack notice-board-dev      handle_grpc_error(exn)
+    pulumi:pulumi:Stack notice-board-dev    File "/home/hatch/workspace/build-check/pulumi-scratch/lab/notice-board/venv/lib/python3.12/site-packages/pulumi/runtime/settings.py", line 352, in handle_grpc_error
+    pulumi:pulumi:Stack notice-board-dev      raise grpc_error_to_exception(exn)
+    pulumi:pulumi:Stack notice-board-dev  pulumi.errors.RunError: Resource monitor has terminated, shutting down
+    pulumi:pulumi:Stack notice-board-dev  During handling of the above exception, another exception occurred:
+    pulumi:pulumi:Stack notice-board-dev  Traceback (most recent call last):
+    pulumi:pulumi:Stack notice-board-dev    File "/home/hatch/workspace/build-check/pulumi-scratch/pulumi/pulumi-language-python-exec", line 235, in <module>
+    pulumi:pulumi:Stack notice-board-dev      pulumi.log.error(str(e))
+    pulumi:pulumi:Stack notice-board-dev    File "/home/hatch/workspace/build-check/pulumi-scratch/lab/notice-board/venv/lib/python3.12/site-packages/pulumi/log.py", line 120, in error
+    pulumi:pulumi:Stack notice-board-dev      _log(engine, engine_pb2.ERROR, msg, resource, stream_id, ephemeral)
+    pulumi:pulumi:Stack notice-board-dev    File "/home/hatch/workspace/build-check/pulumi-scratch/lab/notice-board/venv/lib/python3.12/site-packages/pulumi/log.py", line 155, in _log
+    pulumi:pulumi:Stack notice-board-dev      engine.Log(req)
+    pulumi:pulumi:Stack notice-board-dev    File "/home/hatch/workspace/build-check/pulumi-scratch/lab/notice-board/venv/lib/python3.12/site-packages/grpc/_channel.py", line 1168, in __call__
+    pulumi:pulumi:Stack notice-board-dev      return _end_unary_response_blocking(state, call, False, None)
+    pulumi:pulumi:Stack notice-board-dev             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    pulumi:pulumi:Stack notice-board-dev    File "/home/hatch/workspace/build-check/pulumi-scratch/lab/notice-board/venv/lib/python3.12/site-packages/grpc/_channel.py", line 999, in _end_unary_response_blocking
+    pulumi:pulumi:Stack notice-board-dev      raise _InactiveRpcError(state)  # pytype: disable=not-instantiable
+    pulumi:pulumi:Stack notice-board-dev      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    pulumi:pulumi:Stack notice-board-dev  grpc._channel._InactiveRpcError: <_InactiveRpcError of RPC that terminated with:
+    pulumi:pulumi:Stack notice-board-dev  	status = StatusCode.UNAVAILABLE
+    pulumi:pulumi:Stack notice-board-dev  	details = "failed to connect to all addresses; last error: UNKNOWN: ipv4:127.0.0.1:35551: connection attempt timed out before receiving SETTINGS frame"
+    pulumi:pulumi:Stack notice-board-dev  	debug_error_string = "UNAVAILABLE:failed to connect to all addresses; last error: UNKNOWN: ipv4:127.0.0.1:35551: connection attempt timed out before receiving SETTINGS frame"
+    pulumi:pulumi:Stack notice-board-dev  >
+    pulumi:pulumi:Stack notice-board-dev  error: an unhandled error occurred: program exited with non-zero exit code: 1
+@ previewing update....
+    pulumi:pulumi:Stack notice-board-dev  1 error; 60 messages
+Diagnostics:
+  pulumi:pulumi:Stack (notice-board-dev):
+    Traceback (most recent call last):
+      File "/home/hatch/workspace/build-check/pulumi-scratch/lab/notice-board/venv/lib/python3.12/site-packages/pulumi/runtime/settings.py", line 504, in _load_monitor_feature_support
+        deployment_info = await asyncio.get_running_loop().run_in_executor(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "/usr/lib/python3.12/concurrent/futures/thread.py", line 58, in run
+        result = self.fn(*self.args, **self.kwargs)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "/home/hatch/workspace/build-check/pulumi-scratch/lab/notice-board/venv/lib/python3.12/site-packages/pulumi/runtime/_context.py", line 39, in wrapper
+        return python_ctx.run(run, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "/home/hatch/workspace/build-check/pulumi-scratch/lab/notice-board/venv/lib/python3.12/site-packages/pulumi/runtime/_context.py", line 34, in run
+        return fn(*args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^
+      File "/home/hatch/workspace/build-check/pulumi-scratch/lab/notice-board/venv/lib/python3.12/site-packages/pulumi/runtime/settings.py", line 507, in <lambda>
+        lambda: SETTINGS.monitor.GetDeploymentInfo(empty_pb2.Empty())
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "/home/hatch/workspace/build-check/pulumi-scratch/lab/notice-board/venv/lib/python3.12/site-packages/grpc/_channel.py", line 1168, in __call__
+        return _end_unary_response_blocking(state, call, False, None)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "/home/hatch/workspace/build-check/pulumi-scratch/lab/notice-board/venv/lib/python3.12/site-packages/grpc/_channel.py", line 999, in _end_unary_response_blocking
+        raise _InactiveRpcError(state)  # pytype: disable=not-instantiable
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    grpc._channel._InactiveRpcError: <_InactiveRpcError of RPC that terminated with:
+    	status = StatusCode.UNAVAILABLE
+    	details = "failed to connect to all addresses; last error: UNKNOWN: ipv4:127.0.0.1:35567: connection attempt timed out before receiving SETTINGS frame"
+    	debug_error_string = "UNAVAILABLE:failed to connect to all addresses; last error: UNKNOWN: ipv4:127.0.0.1:35567: connection attempt timed out before receiving SETTINGS frame"
+    >
+    During handling of the above exception, another exception occurred:
+    Traceback (most recent call last):
+      File "/home/hatch/workspace/build-check/pulumi-scratch/pulumi/pulumi-language-python-exec", line 232, in <module>
+        loop.run_until_complete(coro)
+      File "/usr/lib/python3.12/asyncio/base_events.py", line 687, in run_until_complete
+        return future.result()
+               ^^^^^^^^^^^^^^^
+      File "/home/hatch/workspace/build-check/pulumi-scratch/lab/notice-board/venv/lib/python3.12/site-packages/pulumi/runtime/stack.py", line 253, in run_in_stack
+        await _load_monitor_feature_support()
+      File "/home/hatch/workspace/build-check/pulumi-scratch/lab/notice-board/venv/lib/python3.12/site-packages/pulumi/runtime/settings.py", line 514, in _load_monitor_feature_support
+        handle_grpc_error(exn)
+      File "/home/hatch/workspace/build-check/pulumi-scratch/lab/notice-board/venv/lib/python3.12/site-packages/pulumi/runtime/settings.py", line 352, in handle_grpc_error
+        raise grpc_error_to_exception(exn)
+    pulumi.errors.RunError: Resource monitor has terminated, shutting down
+    During handling of the above exception, another exception occurred:
+    Traceback (most recent call last):
+      File "/home/hatch/workspace/build-check/pulumi-scratch/pulumi/pulumi-language-python-exec", line 235, in <module>
+        pulumi.log.error(str(e))
+      File "/home/hatch/workspace/build-check/pulumi-scratch/lab/notice-board/venv/lib/python3.12/site-packages/pulumi/log.py", line 120, in error
+        _log(engine, engine_pb2.ERROR, msg, resource, stream_id, ephemeral)
+      File "/home/hatch/workspace/build-check/pulumi-scratch/lab/notice-board/venv/lib/python3.12/site-packages/pulumi/log.py", line 155, in _log
+        engine.Log(req)
+      File "/home/hatch/workspace/build-check/pulumi-scratch/lab/notice-board/venv/lib/python3.12/site-packages/grpc/_channel.py", line 1168, in __call__
+        return _end_unary_response_blocking(state, call, False, None)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "/home/hatch/workspace/build-check/pulumi-scratch/lab/notice-board/venv/lib/python3.12/site-packages/grpc/_channel.py", line 999, in _end_unary_response_blocking
+        raise _InactiveRpcError(state)  # pytype: disable=not-instantiable
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    grpc._channel._InactiveRpcError: <_InactiveRpcError of RPC that terminated with:
+    	status = StatusCode.UNAVAILABLE
+    	details = "failed to connect to all addresses; last error: UNKNOWN: ipv4:127.0.0.1:35551: connection attempt timed out before receiving SETTINGS frame"
+    	debug_error_string = "UNAVAILABLE:failed to connect to all addresses; last error: UNKNOWN: ipv4:127.0.0.1:35551: connection attempt timed out before receiving SETTINGS frame"
+    >
+
+    error: an unhandled error occurred: program exited with non-zero exit code: 1
+
+Resources:
+    1 errored
+
